@@ -1,0 +1,13 @@
+<nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+  <ul class="list-unstyled mb-0 py-3 pt-md-1">
+    {{ range .Site.Pages.ByPublishDate.Reverse -}}
+    {{- if .IsPage -}}
+    {{- $slug := .Title | urlize -}}
+    {{- $is_active := eq $.Page.Params.group $slug -}}
+    <li>
+      <a href="{{ .RelPermalink }}" class="d-inline-flex align-items-center rounded{{ if $is_active }} active{{ end }}"
+        {{ if $is_active }} aria-current="page" {{ end }}>{{ .Title }}</a>
+    </li>
+    {{- end -}}
+    {{- end -}}
+</nav>

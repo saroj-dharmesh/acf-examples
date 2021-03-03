@@ -1,0 +1,20 @@
+{
+  "name": "acf-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "hugo server --port 9001 --disableFastRender",
+    "build": "hugo --cleanDestinationDir"
+  },
+  "files": [
+    "dist/{css,js}/*.{css,js,map}",
+    "js/{src,dist}/**/*.{js,map}",
+    "scss/**/*.scss"
+  ],
+  "author": "Dhruv Techapps",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "hugo-bin": "^0.68.0"
+  }
+}

@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ partial "home/masthead-header" . }}
+  <main class="bd-content order-1 py-5">
+    {{ partial "home/masthead" . }}
+  </main>
+
+  {{ .Content }}
+{{ end }}

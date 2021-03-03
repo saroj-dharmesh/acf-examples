@@ -1,0 +1,55 @@
+{
+  "name": "test page",
+  "url": "https://test.getautoclicker.com/",
+  "actions": [
+    {
+      "value": "FIRST<batchRepeat>",
+      "elementFinder": "//input[@type=\"text\"]"
+    },
+    {
+      "value": "USER NAME",
+      "elementFinder": "//input[@name=\"username\"]"
+    },
+    {
+      "value": "FIRST NAME",
+      "elementFinder": "//input[@placeholder=\"First name\"]"
+    },
+    {
+      "value": "LAST NAME",
+      "elementFinder": "//input[@id=\"last-name\"]"
+    },
+    {
+      "value": "ARIA DESCRIBEDBY",
+      "elementFinder": "//input[@aria-describedby=\"name\"]"
+    },
+    {
+      "value": "READONLY",
+      "elementFinder": "//input[@readonly]"
+    },
+    {
+      "value": "DISABLED",
+      "elementFinder": "//input[@disabled]"
+    },
+    {
+      "value": "EMAIL",
+      "elementFinder": "//input[@type=\"email\"]"
+    },
+    {
+      "value": "PASSWORD",
+      "elementFinder": "//input[@type=\"password\"]"
+    },
+    {
+      "value": "",
+      "elementFinder": "//input[@value=\"other\"]"
+    },
+    {
+      "value": "audi",
+      "elementFinder": "//select[@name=\"cars\"]"
+    },
+    {
+      "value": "TEXTAREA MESSAGE",
+      "elementFinder": "//textarea[@name=\"message\"]"
+    }
+  ],
+  "enable": true
+}

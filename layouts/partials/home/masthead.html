@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+      <div class="card h-100">
+        <div class="card-body d-flex justify-content-between flex-column">
+          <h5 class="card-title">{{ .Title }}</h5>
+          <p class="card-text">{{.Description}}</p>
+          {{ .TableOfContents }}
+          <a href="{{ .RelPermalink }}" class="btn btn-primary">Click here</a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
