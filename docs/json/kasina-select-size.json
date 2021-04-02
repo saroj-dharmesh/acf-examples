@@ -1,0 +1,32 @@
+{
+  "name": "kasina",
+  "url": "https://www.kasina.co.kr/goods/goods_view.php",
+  "initWait": 0,
+  "startTime": "",
+  "enable": true,
+  "startType": "auto",
+  "loadType": "window",
+  "batch": {
+    "refresh": false,
+    "repeat": 0,
+    "repeatInterval": 0
+  },
+  "actions": [
+    {
+      "name": "",
+      "initWait": 0,
+      "elementFinder": "//div[@class=\"item_add_option_box\"]/dl/dd/div",
+      "value": "MouseEvents::[\"mouseover\", \"mousedown\", \"mouseup\",\"click\"]",
+      "repeat": 0,
+      "repeatInterval": 0
+    },
+    {
+      "name": "",
+      "initWait": 0,
+      "elementFinder": "//div[@class=\"item_add_option_box\"]/dl/dd/div/div/ul/li[contains(text(),\"235\")]",
+      "value": "MouseEvents::[\"mouseover\", \"mousedown\", \"mouseup\",\"click\"]",
+      "repeat": 0,
+      "repeatInterval": 0
+    }
+  ]
+}
